@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 export default function App(){
 
   const [advice, setAdvice] = useState("");
-  const [count, setCount] = useState(-1);
+  const [count, setCount] = useState(0);
 
   async function getAdvice(){
     const response = await fetch("https://api.adviceslip.com/advice");
